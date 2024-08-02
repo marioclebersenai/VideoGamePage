@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #03001c;
+  --btn-background-color: radial-gradient(
+    100% 626.68% at 0% 0%,
+    rgba(30, 19, 65, 0.6) 0%,
+    rgba(57, 30, 138, 0.6) 49.19%,
+    rgba(119, 94, 197, 0.6) 94.27%
+  );
+}
+
+body {
+  width: 1440px;
+  background-color: var(--background-color);
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-right: 130px;
+  padding-left: 140px;
+}
+
+nav {
+  display: flex;
+  color: #eeeeee;
+  padding: 0 120px;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:nth-child(5) {
+  margin-left: 150px;
+}
+
+nav ul li .btn {
+  display: inline-block;
+  width: 115px;
+  height: 44px;
+  border-radius: 25px;
+  padding-top: 10px;
+}
+
+.esquerda {
+  margin-top: 130px;
+}
+
+h1 {
+  font-family: 'Raleway';
+  width: 395px;
+  font-weight: 900;
+  font-size: 75px;
+  background: radial-gradient(
+    100% 506.25% at 0% 0%,
+    #f9f7ff 0%,
+    #c9bcf1 49.22%,
+    #8a70da 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn {
+  background-color: #8a70da;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.esquerda {
+  color: #fff;
+}
+
+.esquerda p {
+  font-family: 'Lato', sans-serif;
+  width: 367px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-bottom: 86px;
+  color: #eeeeee;
+}
+
+.esquerda .btns-links .btn-buy {
+  display: inline-block;
+  width: 203px;
+  height: 44px;
+  border-radius: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+
+  padding-top: 11px;
+}
+
+.btn-seta {
+  border-radius: 50%;
+  border: 0;
+
+  color: #fff;
+  cursor: pointer;
+}
+
+.esquerda .btn-seta {
+  width: 45px;
+  height: 45px;
+  margin-left: 27px;
+  margin-right: 13px;
+}
+
+.carousel {
+  display: flex;
+  width: 205px;
+  margin: 0 auto;
+}
+
+.carousel .btn-seta {
+  width: 31px;
+  height: 31px;
+}
+
+.carousel .indicators {
+  display: flex;
+
+  align-items: center;
+  width: 58px;
+  gap: 20px;
+  margin: 0 38px;
+}
+.carousel .indicators .bolinha {
+  width: 8px;
+  height: 8px;
+  background: #eeeeee;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.carousel .indicators .bolinha:nth-child(2) {
+  background: radial-gradient(
+    100% 626.68% at 0% 0%,
+    rgba(30, 19, 65, 0.6) 0%,
+    rgba(57, 30, 138, 0.6) 49.19%,
+    rgba(119, 94, 197, 0.6) 94.27%
+  );
+}
+
+.second {
+  width: 1119px;
+  height: 458px;
+  background-image: url('/img/gamepad-turn.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 0;
+  margin-top: 28px;
+  position: relative;
+}
+
+.second .info {
+  position: absolute;
+  width: 575px;
+  margin: 0;
+  padding: 0;
+  right: 5px;
+  color: #fff;
+  text-align: end;
+}
+
+.second .info h1 {
+  width: 575px;
+  font-size: 65px;
+}
+
+.second .info p {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-left: 80px;
+}
+
+.second .info ul {
+  list-style: none;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.second .info ul li {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 110px;
+}
+
+.second .info ul li::before {
+  content: '';
+  width: 37.5px;
+  height: 2px;
+  background-color: #8a70da;
+}
